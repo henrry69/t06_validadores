@@ -1,0 +1,29 @@
+import os
+#bonificacion de trabajador
+#INPUT
+trabajador=os.sys.argv[1]
+numero_de_articulos_vendidos=float(os.sys.argv[2])
+monto_promedio_de_ventas=float(os.sys.argv[3])
+
+#PROCESSING
+bonificacion=numero_de_articulos_vendidos*monto_promedio_de_ventas
+
+#Validadores
+bonificacion_alta=(bonificacion>100)
+
+#OUTPUT
+
+print("##########################################")
+print("####   calcular la bonificacion       ####")
+print("##########################################")
+print("####trbajador:",trabajador,"                  ###" )
+print("#### numero de articulos vendidos:",numero_de_articulos_vendidos,"###")
+print("#### monto promedio de ventas:",monto_promedio_de_ventas,"   ####")
+print("#### bonificacion:",bonificacion  ,"               ####")
+print("##########################################")
+
+#
+#condision simple
+if (bonificacion_alta == True):
+    print("trabajador con bonificacion ata")
+#fin_if
